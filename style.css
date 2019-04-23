@@ -3,9 +3,10 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
+
 }
 
-.conatiner {
+.container {
   padding: 0;
   margin: 0;
   width: 50%;
@@ -16,10 +17,21 @@ html, body {
   margin: 0;
 }
 
-#left {
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: visible;
 }
 
-#left {
+.carousel-inner .carousel-item {
+  transition: -webkit-transform 0.1s ease;
+  transition: transform 0.1s ease;
+  transition: transform 0.1s ease, -webkit-transform 0.1s ease;
+}
+
+.carousel-caption {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* .main-gallery {
