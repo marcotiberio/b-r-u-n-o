@@ -1,0 +1,150 @@
+h1,
+h2 {
+  font-size: 20px; 
+  font-weight: 500;
+}
+
+.container a,
+.container a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.container a:focus,
+.container a:hover,
+.container a:active {
+  color: #000; 
+  border-bottom: 1px solid #000;
+}
+
+#logo {
+  position: fixed; 
+  top: 15px; 
+  left: 25px; 
+  text-transform: uppercase; 
+  z-index: 15000;
+}
+
+#logo a:hover {
+  color: #999; 
+  border-bottom: 0;
+}
+
+#topnavi {
+  position: fixed; 
+  top: 15px; 
+  left: 50%; 
+  margin-left: -170px; 
+  width: 340px; 
+  font-size: 20px; 
+  text-align: center;
+  z-index: 15000;
+}
+
+#topnavi ul {
+  list-style: none;
+}
+
+#topnavi ul li {
+  display: inline-block; 
+  font-size: 20px; 
+  font-weight: 500;
+}
+
+#topnavi ul li a {
+  margin: 0 5px 0;
+}
+
+#topnavi ul li.active a {
+  color: #000; 
+  border-bottom: 1px solid;
+}
+
+#project-name {
+  position: fixed; 
+  top: 40px; 
+  left: 25px; 
+  z-index: 15000;
+}
+
+#prev-img,
+#next-img {
+  position: fixed; 
+  bottom: 15px; 
+  left: 25px; 
+  font-size: 16px; 
+  font-weight: 500; 
+  text-transform: uppercase; 
+  z-index: 15000; 
+  border-bottom: 1px solid transparent;
+}
+
+#next-img {
+  left: auto; 
+  right: 25px;
+}
+
+#prev-img:hover,
+#next-img:hover {
+  border-color: #000;
+}
+
+/***************************/ 
+/* plugin overwrite styles */
+/***************************/
+/* remove the close cursor from the lightbox wrapper */
+.sl-lightbox-wrapper {
+  cursor: none;
+}
+
+/* also remove the close cursor for retina displays */
+@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .sl-lightbox-wrapper {
+    cursor: none;
+  }
+}
+
+
+.sl-lightbox-cursor.left {
+  left: -50%;
+  width: 100%;
+}
+
+.sl-lightbox-cursor.right {
+  right: -50%;
+  width: 100%;
+}
+
+/* reposition and style
+the index counter */
+.sl-lightbox-caption-container .right {
+  position: fixed;
+  top: 16px;
+  right: 25px;
+  height: auto !important;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* reposition and style the
+lightbox caption */
+.sl-lightbox-caption-container .center {
+  position: fixed;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  height: auto !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* hard transition, also have to change
+fadeLightboxItem setting option
+accordingly */
+.csstransitions .sl-lightbox-decks-container {
+  -webkit-transition: all 0 ease;
+  -moz-transition: all 0 ease;
+  -ms-transition: all 0 ease;
+  -o-transition: all 0 ease;
+  transition: all 0 ease;
+}
