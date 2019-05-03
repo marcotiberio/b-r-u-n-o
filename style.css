@@ -1,61 +1,50 @@
 html, body {
   width: 100%;
   height: 100%;
-  padding: 0;
-  margin: 0;
-
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  overflow: hidden;
 }
 
-.container {
-  padding: 0;
-  margin: 0;
-  width: 50%;
-}
-
-.row {
-  padding: 0;
-  margin: 0;
-}
-
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: visible;
-}
-
-.carousel-inner .carousel-item {
-  transition: -webkit-transform 0.1s ease;
-  transition: transform 0.1s ease;
-  transition: transform 0.1s ease, -webkit-transform 0.1s ease;
-}
-
-.carousel-caption {
+.bodyWrapper {
+  min-height: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  padding: 0.3%;
 }
 
-/* .main-gallery {
-    width: 1%;
+
+.headerWrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 2fr 30px;
+  justify-items: stretch;
+  align-items: stretch;
 }
 
-.gallery {
-    width: 50%;
-    padding-top: 5%;
-    padding-left: 25%;
-    display: grid;
-    grid-template-columns: repeat (2, 1fr);
+.footerWrapper {
+  position: sticky;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-items: stretch;
+  align-items: stretch;
+  padding: 0.3%;
 }
 
-.left {
-    grid-column-start: 1;
-    grid-column-end: 2;
+.carousel-cell {
+  width: 100%; /* full width */
 }
 
-.right {
-    grid-column-start: 2;
-    grid-column-end: 3;
+.captionWrappeer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+  align-items: stretch;
 }
 
-.img-gallery {
-    width: 100%;
-} */
+.captionDx {
+  text-align: right;
+  padding-right: 2%;
+}
