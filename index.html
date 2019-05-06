@@ -11,67 +11,6 @@
   <link rel="stylesheet" href="gallery.css">
   <link rel="stylesheet" href="assets/css/flickity.css" media="screen">
 
-  <style>
-    * {
-      box-sizing: border-box
-    }
-
-    .mySlides1,
-    .mySlides2 {
-      display: none
-    }
-
-    img {
-      vertical-align: middle;
-    }
-
-    .slideshowWrapper {
-      display: grid;
-      grid-template-columns: 1fr 2fr 1fr;
-    }
-
-    .slideshowInsideWrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 0;
-      height: 100%;
-      width: auto;
-      padding: 80px;
-      margin-top: 0;
-      color: transparent;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-    }
-
-    /* On hover, add a grey background color */
-    .prev:hover,
-    .next:hover {
-      background-color: transparent;
-      color: transparent;
-    }
-  </style>
 </head>
 
 <body>
@@ -83,13 +22,38 @@
       <div>
         Calle lunga San Barnaba Dorsoduro 2729 30123 Venezia +39 041 5230379 <a href="mailto:info@b-r-u-n-o.it">info@b-r-u-n-o.it</a>
         <br>
-        About
+        <span id="title">About</span>
         <a href="#">Studio</a>
         <a href="#">Editions</a>
         <a href="#" target="_blank">Shop</a>
       </div>
       <div></div>
     </header>
+
+    <div id="sidebar">
+      <div class="sidebarHeaderWrapper">
+        <div id="sidebar-title">Tommaso Speretta</div>
+        <div id="sidebar-close" style="text-align: right;">
+          <img src="assets/img/X.png" id="sidebar-close" style="width: 12%;" onmouseover="this.src='assets/img/X_lime.png';" onmouseout="this.src='assets/img/X.png';">
+        </div>
+      </div>
+      <div class="sidebarBody">
+        <p class="sidebar-info">
+          <br><br>
+          bruno is the pseudonym of Andrea Codolo and Giacomo Covacich since 2013. The project, which is based in Venice, combines a graphic design studio, an exhibition space and a specialist bookstore focussing on visual communication and
+          international independent publishers. As for communication design, the studio deals in particular with visual identities, setting up exhibitions, publishing projects, information design and data visualisation in collaboration with
+          institutions, cultural foundations and private clients. Since 2014 bruno has also become a publishing brand, dedicated to designing and publishing limited editions with printing techniques other than industrial production.
+          <br><br>
+          As for graphic design studio, bruno features among its main clients foundations such as the Albanian Pavilion at Biennale di Venezia 2015, Fondazione Berengo, Fondazione Bevilacqua LaMasa, Fondazione Giorgio Cini and Stanze del Vetro,
+          Kinkaleri, Marignana Arte Gallery, MAXXI – National Museum of the XXI Century Arts in Rome, La Triennale di Milano, Design and Fashion Department at Università Iuav di Venezia, Zaha Hadid Architects, and DFS group at T Fondaco dei Tedeschi.
+          It also boasts collaborations with Corriere della Sera newspaper and publishers such as Humbolt, Milano, Marsilio, Venezia and Quodlibet, Macerata.
+          <br><br>
+          bruno also promotes independent publishing both as publisher and as bookstore, focusing on visual arts and architecture. As publisher, it collaborates with artists, curators, architects and theorists, designing every book as unique piece.
+          Among its main series, Carte Blanche, a series edited by Sara Marini (architect, critic and professor at Università Iuav di Venezia) and Alberto Bertagna (architect, critic and professor at UNIGE, Genova), and Lights Out, an adult colouring
+          book series edited by the illustrator Nina Fuga.
+        </p>
+      </div>
+    </div>
 
     <section class="slideshowWrapper">
 
@@ -100,59 +64,75 @@
         <div class="slideshow-container">
           <div class="mySlides1">
             <img src="assets/test-img/book1_sx.png" style="width:100%">
-            <div class="captionWrappeer">
-              <div class="captionSx">Caption One</div>
-              <div class="captionDx">Caption One</div>
+            <div class="captionWrapper">
+              <div class="captionSx">Disappearing Object, Louis De Belle</div>
+              <div class="captionDx">1<br>67</div>
             </div>
           </div>
 
           <div class="mySlides1">
             <img src="assets/test-img/book2_sx.png" style="width:100%">
-            <div class="captionWrappeer">
-              <div class="captionSx">Caption Two</div>
-              <div class="captionDx">Caption Two</div>
+            <div class="captionWrapper">
+              <div class="captionSx">All for All! Kinkaleri</div>
+              <div class="captionDx">2<br>67</div>
             </div>
           </div>
 
           <div class="mySlides1">
             <img src="assets/test-img/identity1_sx.png" style="width:100%">
-            <div class="captionWrappeer">
-              <div class="captionSx">Caption Three</div>
-              <div class="captionDx">Caption Three</div>
+            <div class="captionWrapper">
+              <div class="captionSx">Selle Royal Group</div>
+              <div class="captionDx">3<br>67</div>
             </div>
           </div>
 
-          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+          <div class="mySlides1">
+            <img src="assets/test-img/identity2_sx.png" style="width:100%">
+            <div class="captionWrapper">
+              <div class="captionSx">Selle Royal Group</div>
+              <div class="captionDx">4<br>67</div>
+            </div>
+          </div>
+
+          <p class="prev" onclick="plusSlides(-1, 0)">&#10094;</p>
+          <p class="next" onclick="plusSlides(1, 0)">&#10095;</p>
         </div>
 
         <div class="slideshow-container">
           <div class="mySlides2">
             <img src="assets/test-img/book1_dx.png" style="width:100%">
-            <div class="captionWrappeer">
-              <div class="captionSx">Caption One</div>
-              <div class="captionDx">Caption One</div>
+            <div class="captionWrapper">
+              <div class="captionSx">Disappearing Object, Louis De Belle</div>
+              <div class="captionDx">1<br>67</div>
             </div>
           </div>
 
           <div class="mySlides2">
             <img src="assets/test-img/book2_dx.png" style="width:100%">
-            <div class="captionWrappeer">
-              <div class="captionSx">Caption Two</div>
-              <div class="captionDx">Caption Two</div>
+            <div class="captionWrapper">
+              <div class="captionSx">All for All! Kinkaleri</div>
+              <div class="captionDx">2<br>67</div>
             </div>
           </div>
 
           <div class="mySlides2">
             <img src="assets/test-img/identity1_dx.png" style="width:100%">
-            <div class="captionWrappeer">
-              <div class="captionSx">Caption Three</div>
-              <div class="captionDx">Caption Three</div>
+            <div class="captionWrapper">
+              <div class="captionSx">Selle Royal Group</div>
+              <div class="captionDx">3<br>67</div>
             </div>
           </div>
 
-          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+          <div class="mySlides2">
+            <img src="assets/test-img/identity2_dx.png" style="width:100%">
+            <div class="captionWrapper">
+              <div class="captionSx">Selle Royal Group</div>
+              <div class="captionDx">4<br>67</div>
+            </div>
+          </div>
+
+          <p class="prev" onclick="plusSlides(-1, 1)">&#10094;</p>
+          <p class="next" onclick="plusSlides(1, 1)">&#10095;</p>
         </div>
 
       </div>
@@ -173,7 +153,10 @@
   </section>
 
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
+  <script src="index.js"></script>
+  <script src="toggle.js"></script>
 
 
   <script>
