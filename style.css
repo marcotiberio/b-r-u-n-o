@@ -23,7 +23,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: lime;
+  color: #0000FF;
   transition: ease 0.15s;
 }
 
@@ -62,7 +62,7 @@ a:active {
 /*************** SIDEBAR SIDEBAR SIDEBAR ***************/
 
 #title:hover {
-  color: lime;
+  color: #0000FF;
   cursor: pointer;
   transition: ease 0.15s;
 }
