@@ -67,13 +67,14 @@ a:active {
 
 #brunoLogo {
   width: 50px;
+  cursor: pointer;
 }
 
-#title {
+#about {
   color: #0000FF;
 }
 
-#title:hover {
+#about:hover {
   color: black;
   cursor: pointer;
   transition: ease 0.15s;

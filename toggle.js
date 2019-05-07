@@ -1,5 +1,5 @@
 // SIDEBAR
-$("#title").click(function() {
+$("#about").click(function() {
   $("#sidebar").toggle();
 });
 $("#sidebar-close").click(function() {
