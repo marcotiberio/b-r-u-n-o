@@ -12,24 +12,28 @@ html, body {
 
 /* unvisited link */
 a:link {
-  color: black;
+  color: #0000FF;
   text-decoration: none;
+  transition: ease 0.15s;
 }
 
 /* visited link */
 a:visited {
-  color: black;
+  color: #0000FF;
+  text-decoration: none;
+  transition: ease 0.15s;
 }
 
 /* mouse over link */
 a:hover {
-  color: #0000FF;
+  color: black;
   transition: ease 0.15s;
 }
 
 /* selected link */
 a:active {
   color: black;
+  transition: ease 0.15s;
 }
 
 .bodyWrapper {
