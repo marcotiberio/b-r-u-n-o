@@ -63,15 +63,19 @@ a:active {
   padding: 0.3%;
 }
 
-/*************** SIDEBAR SIDEBAR SIDEBAR ***************/
+/*************** HEADER HEADER HEADER ***************/
+
+#title {
+  color: #0000FF;
+}
 
 #title:hover {
-  color: #0000FF;
+  color: black;
   cursor: pointer;
   transition: ease 0.15s;
 }
 
-/*************** SIDEBAR SIDEBAR SIDEBAR ***************/
+/*************** HEADER HEADER HEADER ***************/
 
 /*************** SIDEBAR SIDEBAR SIDEBAR ***************/
 
