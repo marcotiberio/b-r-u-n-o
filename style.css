@@ -65,6 +65,10 @@ a:active {
 
 /*************** HEADER HEADER HEADER ***************/
 
+#brunoLogo {
+  width: 50px;
+}
+
 #title {
   color: #0000FF;
 }
@@ -73,6 +77,10 @@ a:active {
   color: black;
   cursor: pointer;
   transition: ease 0.15s;
+}
+
+.headerInfoInline {
+  padding-right: 10px;
 }
 
 /*************** HEADER HEADER HEADER ***************/
